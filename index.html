@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!-- Referencia a SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Referencia a SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    
+</head>
+<body>
+    <main>
+        <div class="contenedorInfo">
+            <label for="temperatura">Temperatura en Celsius</label>
+            <input type="text" placeholder="Tº" id="temperatura">
+            <label for="EscalaT">Escoja la escala:</label>
+            <select name="EscalaT" id="EscalaT">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit </option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+            <button class="calcular">Calcular</button>
+            <div>
+                <label>Resultado</label>
+                <p class="Resultado"></p>
+            </div>
+        </div>
+    </main> 
+</body>
+<script src="script.js"></script>
+</html>
